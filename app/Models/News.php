@@ -2,9 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
-class News extends Model
+class News extends BaseCommentableModel
 {
-    //
+    protected $fillable = [
+        'title',
+        'description',
+    ];
 }
